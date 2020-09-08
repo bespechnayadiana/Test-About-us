@@ -55,12 +55,13 @@ body {
         color: $oranges;
 
         &:before {
-          content: url("./../images/double_arrow.svg");
+          content: '';
           width: 15px;
           height: 15px;
           position: absolute;
           top: 1px;
           right: 4px;
+          background: url("./../images/double_arrow.svg");
         }
         &:last-child:before {
           display: none;
