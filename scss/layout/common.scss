@@ -1,0 +1,205 @@
+body {
+  font-size: 16px;
+  line-height: 1.3;
+
+  .title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0;
+    padding-bottom: 50px;
+    font-size: 35px;
+  }
+
+  .container {
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+
+  .home {
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 500px;
+    display: flex;
+
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .title {
+      color: $white;
+      font-size: 46px;
+      margin: 0;
+
+      @include media ('>=XS-phone') {
+        font-size: 58px;
+      }
+    }
+
+    .nav {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .breadcrumbs {
+      margin: 0;
+      padding: 0;
+      align-items: center;
+
+      li {
+        padding-right: 23px;
+        position: relative;
+        color: $oranges;
+
+        &:before {
+          content: url("../../images/double_arrow.svg");
+          width: 15px;
+          height: 15px;
+          position: absolute;
+          top: 1px;
+          right: 4px;
+        }
+        &:last-child:before {
+          display: none;
+        }
+      }
+
+      a {
+        color: $white;
+        font-weight: normal;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .agency {
+    padding: 80px 0;
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 20px;
+
+      @include media ('>=iPad-Pro') {
+        flex-direction: row;
+      }
+
+      @include media ('>=desktop') {
+        padding: 0;
+      }
+
+      .image {
+        width: 100%;
+        max-width: 570px;
+        padding-bottom: 20px;
+
+        @include media ('>=iPad-Pro') {
+          padding: 0;
+        }
+      }
+    }
+
+    .content {
+      padding: 0;
+
+      @include media ('>=iPad-Pro') {
+        padding-left: 30px;
+      }
+
+      .text {
+        margin-bottom: 30px;
+      }
+
+      .title {
+        padding-bottom: 25px;
+        font-size: 20px;
+
+        @include media ('>=iPad-Pro') {
+          text-align: left;
+        }
+      }
+
+      .list {
+        list-style: none;
+        padding-left: 15px;
+
+        .row {
+          position: relative;
+          padding: 0 0 20px 25px;
+        }
+
+        .icon-checkmark {
+          color: $oranges;
+          position: absolute;
+          top: calc(50% - 17px);
+          left: 0;
+          content: '';
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    background-color: $light-gray;
+    padding: 80px 0;
+
+    .cover {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      @include media ('>=tablet') {
+        flex-wrap: initial;
+      }
+
+      @include media ('>=desktop') {
+        margin: 0 -15px;
+      }
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 15px;
+      background-color: $white;
+      padding-bottom: 38px;
+
+      @include media ('>=XS-phone') {
+        width: 44%;
+        margin: 0 15px 15px;
+      }
+
+      @include media ('>=tablet') {
+        width: 33.33%;
+      }
+
+      @include media ('>=desktop') {
+        margin-bottom: 0;
+      }
+
+      .photo {
+        width: 100%;
+      }
+
+      .content {
+        padding: 0 20px;
+      }
+
+      .subtitle {
+        margin: 0;
+        padding: 30px 0;
+        text-transform: uppercase;
+        font-size: 20px;
+      }
+
+      .text {
+        margin: 0;
+      }
+    }
+  }
+}

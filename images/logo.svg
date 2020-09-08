@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="41" height="41" viewBox="0 0 41 41">
+  <defs>
+    <style>
+      .cls-1 {
+        filter: url(#color-overlay-1);
+      }
+
+      .cls-2, .cls-4 {
+        fill: #fff;
+      }
+
+      .cls-3, .cls-4 {
+        font-size: 24px;
+      }
+
+      .cls-4 {
+        text-anchor: end;
+        font-family: "Muli";
+      }
+
+      .cls-5 {
+        stroke: #fff;
+        stroke-width: 1px;
+        fill: none;
+      }
+    </style>
+
+    <filter id="color-overlay-1" filterUnits="userSpaceOnUse">
+      <feFlood flood-color="#ffa000"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+      <feBlend in2="SourceGraphic" result="solidFill"/>
+    </filter>
+  </defs>
+  <g class="cls-1">
+    <g>
+      <rect x="11.5" y="16.5" width="2" height="13" class="cls-2"/>
+      <circle cx="12.5" cy="13.5" r="1" class="cls-2"/>
+    </g>
+    <text x="33.5" y="29.5" class="cls-3"><tspan class="cls-4">D</tspan></text>
+    <rect x="0.5" y="0.5" width="40" height="40" class="cls-5"/>
+  </g>
+</svg>
