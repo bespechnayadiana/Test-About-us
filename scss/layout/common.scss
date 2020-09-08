@@ -55,7 +55,7 @@ body {
         color: $oranges;
 
         &:before {
-          content: url("../../images/double_arrow.svg");
+          content: url("./../images/double_arrow.svg");
           width: 15px;
           height: 15px;
           position: absolute;
